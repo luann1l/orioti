@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em Camadas</title>
+    <link rel="stylesheet" href="orioti.css">
+</head>
+<body>
+    <div class="container">
+        <div class="camada">
+            <div class="imagem1">
+                <img src="/projeto-imagens/original/img1.jpg" alt="Imagem 1">
+            </div>
+            <div class="imagem2">
+                <picture>
+                    <source srcset="otimizado/imagem-webp.webp" type="image/webp" media="(max-width: 600px)">
+                    <img src="/projeto-imagens/otimizado/img1 (1).webp" alt="Imagem Otimizada">
+                </picture>
+            </div>
+        </div>
+
+        <div class="camada">
+            <div class="imagem3">
+                <img src="/projeto-imagens/original/img2.jpeg" alt="Imagem 3">
+            </div>
+            <div class="imagem4">
+                <picture>
+                    <source srcset="otimizado/imagem-webp.webp" type="image/webp" media="(max-width: 600px)">
+                    <img src="/projeto-imagens/otimizado/img2 (1).webp" alt="Imagem Otimizada">
+                </picture>
+            </div>
+        </div>
+
+        <div class="camada">
+            <div class="imagem5">
+                <img src="/projeto-imagens/original/img3.jpg" alt="Imagem 5">
+            </div>
+            <div class="imagem6">
+                <picture>
+                    <source srcset="otimizado/imagem-webp.webp" type="image/webp" media="(max-width: 600px)">
+                    <img src="/projeto-imagens/otimizado/img3 (1).webp" alt="Imagem Otimizada">
+                </picture>
+            </div>
+        </div>
+
+        <div class="camada">
+            <div class="imagem7">
+                <img src="/projeto-imagens/original/img4.jpg" alt="Imagem 7">
+            </div>
+            <div class="imagem8">
+                <picture>
+                    <source srcset="otimizado/imagem-webp.webp" type="image/webp" media="(max-width: 600px)">
+                    <img src="/projeto-imagens/otimizado/img4 (1).webp" alt="Imagem Otimizada">
+                </picture>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+/* Container que agrupa as camadas */
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Cada camada de imagens */
+.camada {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Garante que as imagens se ajustem em dispositivos pequenos */
+}
+
+/* Cada imagem tem um tamanho flexível e ocupa 50% do espaço */
+.camada div {
+    flex: 1 1 48%; /* Flexível, mas com um limite de 48% para garantir espaçamento */
+    margin: 5px;
+}
+
+/* Ajustando as imagens para que ocupem 100% da largura e mantenham a proporção */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Garante que as imagens ocupem o espaço sem distorcer */
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(255, 255, 255);
+        height: auto
+    }
+}
